@@ -1,6 +1,20 @@
 baseURL: https://wowthing.org
 title: WoWthing
 
+menu:
+  main:
+    - name: Github
+      weight: 40
+      url: https://github.com/ThingEngineering/wowthing-again
+      pre:
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+
+    - name: Discord
+      weight: 50
+      url: https://discord.gg/4UkTT5y
+      pre:
+        <i class="fa-brands fa-discord" aria-hidden="true"></i>
+
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu slugorcontentbasename
 
 # Language settings
@@ -151,7 +165,7 @@ params:
   github_branch: main
 
   # Google Custom Search Engine ID. Remove or comment out to disable search.
-  gcs_engine_id: d72aa9b2712488cc3
+  # gcs_engine_id: d72aa9b2712488cc3
 
   # Enable Lunr.js offline search
   offlineSearch: false

@@ -5,6 +5,12 @@ description: >
 weight: 4
 ---
 
+Addons:
+
+- [Rematch](https://www.curseforge.com/wow/addons/rematch) for a lot of good stuff
+- [FixRematch](https://www.curseforge.com/wow/addons/fixrematch) so that Rematch actually works
+- [Pet Battle Scripts](https://www.curseforge.com/wow/addons/pet-battle-scripts) to mostly automate repetitive battles
+
 ## Dalaran
 
 ### Fight Night: Amalia

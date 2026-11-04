@@ -1,7 +1,6 @@
 ---
 title: Pet Battles
 linkTitle: Pet Battles
-menu: { main: { weight: 10 } }
 ---
 
 This section is where the user documentation for your project lives - all the

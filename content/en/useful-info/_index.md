@@ -3,7 +3,7 @@ title: Useful Info
 linkTitle: Useful Info
 menu: { main: { weight: 30 } }
 cascade:
-    type: docs
+  type: docs
 ---
 
 This section is where the user documentation for your project lives - all the

@@ -1,4 +1,5 @@
-baseURL: https://about.wowthing.org
+#baseURL: https://about.wowthing.org
+baseUrl: https://thingengineer.github.io/wowthing.org
 title: WoWthing
 
 menu:

@@ -21,3 +21,10 @@ https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
     color: tint-color($primary, 80%) !important;
   }
 }
+
+hr + h2 {
+  margin-top: 1rem !important;
+}
+p + .highlight {
+  margin: 1rem 0 !important;
+}

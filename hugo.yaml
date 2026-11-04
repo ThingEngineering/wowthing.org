@@ -1,5 +1,5 @@
-#baseURL: https://about.wowthing.org
-baseUrl: https://thingengineer.github.io/wowthing.org
+baseURL: https://docs.wowthing.org
+#baseUrl: https://thingengineer.github.io/wowthing.org
 title: WoWthing
 
 menu:
@@ -62,6 +62,12 @@ outputFormats:
 # Configure how URLs look like per section.
 # permalinks:
 #   blog: /:section/:year/:month/:day/:slugorcontentbasename
+
+permalinks:
+  page:
+    docs: /:sections[1:]/:slug/
+  section:
+    docs: /:sections[1:]
 
 # Image processing configuration.
 imaging:
@@ -153,10 +159,10 @@ params:
   version: 0.18.1
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/docsy/docsy-example
+  github_repo: https://github.com/ThingEngineering/wowthing.org
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/docsy/docsy
+  github_project_repo: https://github.com/ThingEngineering/wowthing-again
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""

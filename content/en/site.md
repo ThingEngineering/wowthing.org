@@ -7,6 +7,7 @@ params:
   body_class: td-no-left-sidebar
   hide_feedback: true
   cSpell:ignore: docsy
+build: { render: link }
 ---
 
 Site built with [<span class="badge bg-primary text-bg-primary fs-6">Docsy

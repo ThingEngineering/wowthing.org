@@ -34,9 +34,13 @@ Fast, reliable and safe for level 1 pets
 
 ### Fight Night: Tiffany Nelson
 
-Rotten Little Helper + Squawkling S/S
-Fight duration: ~1:10
-Fast, reliable and safe for level 1 pets
+> [!TIP] Ichabod `[ANY]` / Obsidian Warwhelp `[ANY]`
+>
+> Level 1 safe. Needs bandages. ~55s. 4 battles with Safari Hat.
+>
+> ```text
+> Fight Night: Tiffany Nelson:2VGC:112635G:1223455:ZL:N:-----BEGIN PET BATTLE SCRIPT-----\nchange(#2) [ round=2 ]\nchange(#1) [ self(#3).played ]\nuse(Reaping Hook:2469)\nuse(Flame Breath:501) [ round=3 & enemy(#1).dead ]\nuse(Time Bomb:602)\nuse(Armageddon:1025)\nuse(Claw:429)\nchange(#3)\n-----END PET BATTLE SCRIPT-----
+> ```
 
 ---
 
@@ -54,20 +58,13 @@ Reliable and safe for level 1 pets
 
 ### Snail Fight!
 
-- Gorm Harrier (1/1/1)
-- Kunchon Hatchling (1/1/1)
-- Leveling Pet
-
-Gorm Harrier + Kunchon Hatchling
-Fight duration: 0:55
-Fast, reliable and safe for level 1 pets
-
-These fights rarely require bandages:
-Xu-Fu, Cub of Xuen
-Fight duration: ~1:35
-and
-Teroclaw Hatchling
-Fight duration: ~1:45
+> [!TIP] Leveling Pet / Xu-Fu `[ANY]` / Leveling Pet
+>
+> Level 1 safe. No bandages but small chance of failing.
+>
+> ```text
+> Snail Fight!:3639:ZL:212417I:ZL:N:-----BEGIN PET BATTLE SCRIPT-----\nquit [ self(#2).dead ]\nstandby [ round=1 ]\nchange(#2) [ !self(#2).active ]\nchange(#3) [ enemy(#1).dead & !self(#3).played ]\nif [ enemy(#3).active ]\n    use(Feed:1016) [ self.aura(Prowl:543).exists ]\n    use(Prowl:536) [ self.hp>723 & self.ability(Feed:1016).duration<2 ]\n    use(Feed:1016)\n    use(Bite:110)\nendif\nuse(Prowl:536)\nuse(Feed:1016) [ self.aura(Prowl:543).duration=1 ]\nuse(Bite:110) [ !self.aura(Prowl:543).exists & enemy.hpp<100 & !enemy(#2).active ]\nuse(Bite:110) [ enemy.ability(Headbutt:376).usable ]\nstandby\n-----END PET BATTLE SCRIPT-----
+> ```
 
 ### Tiny Poacher, Tiny Animals
 

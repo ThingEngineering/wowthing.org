@@ -22,6 +22,14 @@ This fight rarely requires bandages!
 
 ### Fight Night: Bodhi Sunwayver
 
+> [!TIP] 
+>
+> Level 1 safe. Needs bandages. ~1m30s.
+>
+> ```text
+> Fight Night: Bodhi Sunwayver:30SA:11201I1:1215QC:ZL:N:Strategy added by Shenk\nTurn 1: Soulrush.\nTurn 2+: Magic Sword until Itchy dies \nNote that there is a chance that Itchy got stunned in the first round. When that happens use Magic Sword in round 2 as usual and then Clean-Up. This will remove the Cyclone of Salty Bird as intended.\nSalty Bird comes in\nTurn A: Clean-Up\nTurn 2: Magic Sword until Salty Bird has 868 or less health\nTurn 3: Soulrush. Salty Bird dies (If Servant of Demidos dies too soon send in Mechanical Pandaren Dragonling and use Breath)\n*: Should Itchy come back in finish it with Magic Sword and Soulrush\nGrommet comes in\nTurn 1+: Magic Sword until either Servant of Demidos dies or Grommet has 492 or less health\nTurn 2: Pass when Servant of Demidos is active and Grommet is at <=492 health\nBring in your Mechanical Pandaren Dragonling\nFollow this priority list:\nPrio 1: Explode when Grommet has 560 or less health\nPrio 2: Thunderbolt when Grommet has 799 or more health\nPrio 3: Breath\n\n-----BEGIN PET BATTLE SCRIPT-----\nif [enemy(#1).active]\n ability(Soulrush:752) [enemy.round=1]\n ability(Soulrush:752) [enemy.hp<=579 & enemy(#2).dead]\n ability(Magic Sword:1085)\nendif\n\nif [enemy(#2).active]\n   ability(Clean-Up:456)\n   ability(Soulrush:752) [enemy.hp<=868]\n   ability(Magic Sword:1085)\nchange(#2) [self(#1).dead]\n   ability(Breath:115)\nendif\n\nability(Magic Sword:1085) [enemy.hp>492]\nstandby [self(#1).active]\nchange(#2)\nability(Explode:282) [enemy(#3).hp.can_explode]\nability(Thunderbolt:779) [enemy.hp>798 & enemy(#3).active]\nability(Breath:115)\n-----END PET BATTLE SCRIPT-----
+> ```
+
 Servant of Demidos + Mechanical Pandaren Dragonling
 Fight duration: ~1:30
 Fast, reliable and safe for level 1 pets
